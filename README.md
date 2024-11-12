@@ -1,66 +1,76 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+**NAMA: NOBEL RAHMAT SANI**
+**KELAS: 2A TRPL**
+**NIM: 362358302075**
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+1.  Persiapan Lingkungan
+   - Instalasi Laravel:
+     ![image](https://github.com/user-attachments/assets/fe685ef9-0aaa-4e81-b779-682046e13a45)
 
-## About Laravel
+   - Konfigurasi Database:
+     ![image](https://github.com/user-attachments/assets/7f5347c1-da09-4660-a3d1-2000d5810f4c)
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+2. Instalasi dan Konfigurasi Laravel Sanctum
+   - Migrasi Database:
+     ![image](https://github.com/user-attachments/assets/5aaf5fb7-8738-4834-9191-d9b67166c442)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+   - Konfigurasi Sanctum:
+     ![image](https://github.com/user-attachments/assets/cae2a7f6-6090-4827-b6d6-58a1e487183e)
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+   - Konfigurasi User Model:
+     ![image](https://github.com/user-attachments/assets/fef83728-18da-4d6f-ac88-a5d9cfd1d528)
 
-## Learning Laravel
+3. Autentikasi API
+   A. Registrasi Pengguna:
+      - Buat controller untuk autentikasi:
+        ![image](https://github.com/user-attachments/assets/e6f5772a-5758-4a29-8d23-6854b79256b3)
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+      - Tambahkan metode registrasi	di `AuthController`:
+        ![image](https://github.com/user-attachments/assets/3d547b96-f929-48bb-b13b-4c9a28ab1718)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+   B. Login Pengguna:
+      - Tambahkan metode login di `AuthController`:
+        ![image](https://github.com/user-attachments/assets/cae1f6aa-a04d-427b-b4a6-938963c7e1a6)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+4. CRUD Data Siswa
+   A. Model	dan	Migration:
+      - Buat model dan migration untuk `Siswa`:
+        ![image](https://github.com/user-attachments/assets/c116acc3-5f70-4a4d-82c4-2fd31c77bee0)
 
-## Laravel Sponsors
+      - Definisikan	struktur tabel di migration:
+        ![image](https://github.com/user-attachments/assets/ce32a58c-f7de-49ad-b1f0-f10f18633dcd)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+      - Jalankan migrasi:
+        ![image](https://github.com/user-attachments/assets/cad8290c-345e-4510-a6c7-40e893f68f62)
 
-### Premium Partners
+   B. Controller dan Route:
+      - Buat controller	untuk `Siswa`:
+        ![image](https://github.com/user-attachments/assets/b99c5808-a644-4dd1-ad79-7a2f837656aa)
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+      - Implementasikan	metode CRUD	di `SiswaController` dengan	error handling:
+        ![image](https://github.com/user-attachments/assets/a428ad8b-bc00-45ae-b53e-e792de92965a)
+        ![image](https://github.com/user-attachments/assets/ad03850b-55c9-409e-a12d-641697c1ab06)
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+      - Definisikan	route di `routes/api.php`:
+        ![image](https://github.com/user-attachments/assets/6be2bf4c-a20b-40d9-8dcb-95ee01b67510)
 
-## Code of Conduct
+5. Pengujian API
+   A. Pengujian	dengan Postman:
+      - Registrasi:
+        ![1](https://github.com/user-attachments/assets/e3514255-ae81-465e-a43c-e3501df8590a)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+      - Login:
+        ![2](https://github.com/user-attachments/assets/4013e6da-decc-43ef-a9b9-d8fafd4f5ee3)
 
-## Security Vulnerabilities
+      - CRUD:
+        ![5](https://github.com/user-attachments/assets/873be297-d150-4d20-8627-f6bcf66d0c44)
+        ![6](https://github.com/user-attachments/assets/79f0bea8-0173-4dc7-b291-6970ca229649)
+        ![8](https://github.com/user-attachments/assets/7d59cfb6-975e-4d40-8603-ed9392fff14b)
+        ![7](https://github.com/user-attachments/assets/22a45c78-dbcf-4feb-99dc-b63f3a21a439)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+6. Tugas Tambahan
+   - Tambahkan validasi:
+     ![5](https://github.com/user-attachments/assets/bb2661a3-d045-4493-ae2d-0882d1c59ba6)
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+   - Respons Error yang Lebih Informatif:
+     ![4](https://github.com/user-attachments/assets/ae42f764-1e03-4835-af0e-59e85c648fe1)
